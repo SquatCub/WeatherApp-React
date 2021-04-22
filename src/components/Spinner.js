@@ -12,7 +12,7 @@ const Spinner = (props) => {
     );
 };
 Spinner.defaultProps = {
-    message: "Loading"
+    message: "Waiting for position"
 };
 
 export default Spinner;

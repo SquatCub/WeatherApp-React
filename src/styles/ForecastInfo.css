@@ -1,0 +1,18 @@
+.forecasts {
+    padding: 20px, 0, 20px, 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    text-align: center;
+}
+.forecast {
+    margin: 10px;
+    border-radius: 10px;
+    background-color: turquoise;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.6);
+    transform: scale(0.95);
+    transition: box-shadow 0.2s, transform 0.5s;
+}
+.forecast:hover {
+    transform: scale(1);
+    box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.6);
+}
