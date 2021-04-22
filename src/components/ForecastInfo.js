@@ -1,10 +1,14 @@
 import React from 'react';
 import '../styles/ForecastInfo.css';
 
+const time = hour => {
+    return hour > 6 && hour < 20 ? "d" : "n";
+}
+
 const ForecastInfo = (props) => {
     return(
-        <div className={`forecast ${props.forecast.weather[0].main}`} key={props.forecast.dt}>
-            <h6>{props.forecast.dt_txt}</h6>
+        <div className={`forecast ${time(props.time.slice(11,13))}-${props.forecast.weather[0].main}`} key={props.forecast.dt}>
+            <h6>{props.time}</h6>
             <h6>{props.forecast.weather[0].main}</h6>
             <img alt={props.forecast.dt_txt} src={`http://openweathermap.org/img/wn/${props.forecast.weather[0].icon}@2x.png`} />
             <p>Temperature: {props.forecast.main.temp}º</p>

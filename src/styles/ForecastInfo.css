@@ -5,10 +5,10 @@
     text-align: center;
 }
 .forecast {
+    padding: 5px;
     margin: 10px;
     border-radius: 10px;
-    background-color: turquoise;
-    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
     transform: scale(0.95);
     transition: box-shadow 0.2s, transform 0.5s;
 }

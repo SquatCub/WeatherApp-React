@@ -2,14 +2,30 @@
     color: white;
     border-radius: 10px;
 }
-
-.Clear {
-    background-color: rgb(77, 168, 221);
+.weather-display img {
+    transform: scale(0.95);
+    transition:  transform 0.5s;
+}
+.weather-display img:hover {
+    transform: scale(1.1);
+}
+.d-Clear, .d-Clouds {
+    background-color: rgb(118, 200, 233);
+}
+.d-Thunderstorm, .d-Drizzle, .d-Atmosphere {
+    background-color: rgb(158, 158, 158);
+}
+.d-Rain, .d-Snow {
+    background-color: rgb(60, 126, 180);
 }
 
-.Thunderstorm, .Drizzle, .Atmosphere, .Clouds {
-    background-color: dimgray;
+.n-Clear {
+    background-color: rgb(51, 51, 51);
 }
-.Rain, .Snow {
-    background-color: steelblue;
+
+.n-Thunderstorm, .n-Drizzle, .n-Atmosphere, .n-Clouds {
+    background-color: rgb(36, 36, 36);
+}
+.n-Rain, .n-Snow {
+    background-color: rgb(83, 83, 83);
 }

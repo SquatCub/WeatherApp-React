@@ -1,5 +1,4 @@
 import React from 'react';
-
 const Spinner = (props) => {
     return(
         <div>
@@ -7,7 +6,7 @@ const Spinner = (props) => {
                 <div className="spinner-border" role="status">
                 </div>
             </div>
-            {props.message}
+            <h6>{props.message}</h6>
         </div>
     );
 };
