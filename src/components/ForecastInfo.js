@@ -1,10 +1,12 @@
 import React from 'react';
 import '../styles/ForecastInfo.css';
 
+// Saber si la hora del pronostico es de dia o de noche 
 const time = hour => {
     return hour > 6 && hour < 20 ? "d" : "n";
 }
 
+// Componente para pronostico
 const ForecastInfo = (props) => {
     return(
         <div className={`forecast ${time(props.time.slice(11,13))}-${props.forecast.weather[0].main}`} key={props.forecast.dt}>
