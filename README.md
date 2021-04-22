@@ -1,13 +1,12 @@
-# Getting Started with Create React App
+# Aplicación de clima con React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Scripts Necesarios para ejecutarlo
 
-## Available Scripts
-
-In the project directory, you can run:
-
+Si no se tiene instalado axios se debe ejecutar:
+### `npm install --save axios`
 ### `npm start`
 
+### -   -   -   -   -   -   -   -   -   -   -   -   ##
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 

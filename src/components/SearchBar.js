@@ -21,7 +21,7 @@ class SearchBar extends React.Component {
                         <div className="d-flex justify-content-center">
                             {/* Input con sus manejadores de eventos */}
                             <input
-                                className="form-control col-md-5 col-sm-6"
+                                className="form-control col-md-5 col-sm-6 mr-2"
                                 placeholder="Enter a city" 
                                 type="text" 
                                 value={this.state.city} 

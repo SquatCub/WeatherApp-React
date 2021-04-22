@@ -2,6 +2,7 @@ import React from 'react';
 import SearchBar from './SearchBar';
 import Spinner from './Spinner';
 import WeatherInfo from './WeatherInfo';
+import Message from './Message';
 import openweather from '../api/openweather';
 import '../styles/App.css';
 import search from '../images/search.png';
@@ -27,11 +28,6 @@ class App extends React.Component {
                 this.setState({message: "No current position available, please enter a city"})
             }
         );
-    }
-
-    // Funcion para capitalizar una cadena (Cuestion estetica)
-    Capitalize(str){
-        return str.charAt(0).toUpperCase() + str.slice(1);
     }
 
     // Funcion para la obtencion de posicion actual en base a latitud y longitud (en caso de tener los permisos)
@@ -80,10 +76,7 @@ class App extends React.Component {
         // Si hay algun mensaje (No es lo mismo que el error)
         } else if(this.state.message) {
             return (
-                <div>
-                    <h3>{this.state.message}</h3>
-                    <img alt="search" className="img-fluid" width="100" src={search} />
-                </div>
+                <Message message={this.state.message} image={search}/>
             );
         }
         // Si no se cumple ninguna condicion, mostrar un spinner
@@ -104,7 +97,7 @@ class App extends React.Component {
                 <SearchBar onSubmit={this.getCurrent}/>
                 <br/>
                 {/* Mensaje de error */}
-                <h3 className="text-capitalize font-weight-light">{this.state.error}</h3>
+                <Message message={this.state.error}/>
                 {/* Funcion que determina que se renderizara */}
                 {this.renderContent()}
                 <br/>
