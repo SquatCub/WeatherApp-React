@@ -1,10 +1,33 @@
 # Aplicación de clima con React
 
 ## Scripts Necesarios para ejecutarlo
+### `git clone https://github.com/SquatCub/weather-test.git`
+### `cd weather-test`
+### `npm install`
 
 Si no se tiene instalado axios se debe ejecutar:
 ### `npm install --save axios`
+
+Para ejecutar la app
 ### `npm start`
+
+Puede jugar con los permisos de ubicacion de Chrome para ver como se comporta la app 
+
+## Features
+### Uso de la API OpenWeatherMap
+### Pagina responsiva
+### Se muestra pantalla de carga al iniciar
+### Pide permisos de ubicacion (Solo se probo en Chrome)
+### Muestra el clima de la ubicacion actual si se le otorgan permisos
+### Si no se otorgan los permisos muestra un mensaje con una imagen
+
+### Se puede buscar cualquier ciudad y si no se encuentra deja un mensaje, se mantiene la anterior ciudad mostrada
+#### Si se deja en blanco y se envia el formulario se mostrara el clima de la posicion actual, si no se tienen permisos se mostrara una mensaje al usuario
+
+### Imagenes alusivas al clima de la ciudad y cada pronostico de la misma
+### Colores alusivos al clima y hora (dia o noche) tanto como en el clima actual como en los pronosticos
+### Uso de Bootstrap y CSS custom
+### UI y UX
 
 ### -   -   -   -   -   -   -   -   -   -   -   -   ##
 Runs the app in the development mode.\
